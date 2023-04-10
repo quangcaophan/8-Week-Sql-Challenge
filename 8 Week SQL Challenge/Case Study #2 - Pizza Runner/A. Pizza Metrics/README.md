@@ -250,9 +250,7 @@ updated_runner_orders
 ## 🚀 Solutions
 
 <details>
-<summary> 
 Pizza Metrics
-</summary>
 
 ### **Q1. How many pizzas were ordered?**
 ```sql
