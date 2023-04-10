@@ -22,7 +22,7 @@
 ***
 
 ## Case Study #1: Danny's Diner 
-<img src="https://user-images.githubusercontent.com/81607668/127727503-9d9e7a25-93cb-4f95-8bd0-20b87cb4b459.png" alt="Image" width="500" height="520">
+<img width=40% height=40% img src="https://user-images.githubusercontent.com/81607668/127727503-9d9e7a25-93cb-4f95-8bd0-20b87cb4b459.png" alt="Image" width="500" height="520">
 
 View the case study [here](https://8weeksqlchallenge.com/case-study-1/) and my **solution** [here](https://github.com/quangcaophan/8-Week-Sql-Challenge/tree/main/8%20Week%20SQL%20Challenge/Case%20Study%20%231%20-%20Danny's%20Diner).
 
@@ -36,7 +36,7 @@ Danny wants to use the data to answer a few simple questions about his customers
 
 ## Case Study #2: Pizza Runner
 
-<img src="https://user-images.githubusercontent.com/81607668/127271856-3c0d5b4a-baab-472c-9e24-3c1e3c3359b2.png" alt="Image" width="500" height="520">
+<img width=40% height=40% img src="https://user-images.githubusercontent.com/81607668/127271856-3c0d5b4a-baab-472c-9e24-3c1e3c3359b2.png" alt="Image" width="500" height="520">
 
 View the case study [here](https://8weeksqlchallenge.com/case-study-2/) and my **solution** [here](https://github.com/quangcaophan/8-Week-Sql-Challenge/tree/main/8%20Week%20SQL%20Challenge/Case%20Study%20%232%20-%20Pizza%20Runner/A.%20Pizza%20Metrics).
 
