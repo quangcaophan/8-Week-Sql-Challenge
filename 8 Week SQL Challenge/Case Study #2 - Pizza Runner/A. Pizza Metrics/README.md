@@ -249,9 +249,6 @@ updated_runner_orders
 
 ## 🚀 Solutions
 
-<details>
-Pizza Metrics
-
 ### **Q1. How many pizzas were ordered?**
 ```sql
 SELECT
@@ -435,4 +432,3 @@ GROUP BY FORMAT(DATEADD(DAY, 2, order_time), 'dddd');
 | Monday      | 5           |
 | Sunday      | 1           |
 
-</details>
