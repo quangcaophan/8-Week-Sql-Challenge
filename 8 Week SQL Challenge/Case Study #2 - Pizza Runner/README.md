@@ -186,18 +186,21 @@ Data issues in the existing schema include:
 ### **Data Cleaning**
 
 **```customer_orders```**
-- Converting ```null``` and ```NaN``` values into blanks ```''``` in ```exclusions``` and ```extras```
-  - Blanks indicate that the customer requested no extras/exclusions for the pizza, whereas ```null``` values would be ambiguous.
+
+Cleaning customer_orders
+- Identify records with null or 'null' values
+- Updating null or 'null' values to ''
+- Blanks '' are not null because it indicates the customer asked for no extras or exclusions
 - Saving the transformations in a temporary table
-  - We want to avoid permanently changing the raw data via ```UPDATE``` commands if possible.
 
 **```runner_orders```**
 
-- Converting ```'null'``` text values into null values for ```pickup_time```, ```distance``` and ```duration```
-- Extracting only numbers and decimal spaces for the distance and duration columns
-  - Use regular expressions and ```NULLIF``` to convert non-numeric entries to null values
-- Converting blanks, ```'null'``` and ```NaN``` into null values for cancellation
+- pickup time, distance, duration is of the wrong type
+- Records have nulls in these columns when the orders are cancelled
+- Convert text 'null' to null values
+- Units (km, minutes) need to be removed from distance and duration
 - Saving the transformations in a temporary table
+
 
 **Result:**
 
