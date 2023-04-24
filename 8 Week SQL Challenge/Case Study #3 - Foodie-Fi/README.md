@@ -109,9 +109,9 @@ In this part, I will display the first 20 rows of this dataset since the origina
 ---
 
 <details>
-<summary> 
-## 🚀 Solutions
-</summary>
+  <summary> 
+   ## 🚀 Solutions
+  </summary>
 
 **1. How many customers has Foodie-Fi ever had?**
 
