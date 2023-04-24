@@ -106,11 +106,12 @@ In this part, I will display the first 20 rows of this dataset since the origina
 10. Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)
 11. How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
 
----
+
+## 🚀 Solutions
 
 <details>
   <summary> 
-   ## 🚀 Solutions
+    Data Analysis Questions
   </summary>
 
 **1. How many customers has Foodie-Fi ever had?**
