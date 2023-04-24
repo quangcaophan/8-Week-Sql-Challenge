@@ -373,7 +373,7 @@ WHERE plan_id = 3
 ````
 
 **Answer:**
-|count |
+|unique_customer |
 |------|
 |195 |
 
@@ -407,7 +407,7 @@ JOIN annual_plan AS ap
 ````
 
 **Answer:**
-|count |
+|avg_days_to_upgrade |
 |------|
 |104 |
 
@@ -450,8 +450,8 @@ ORDER BY avg_days_to_upgrade;
 
 **Answer:**
 
-|  30-day-range  |  count  |
-|----------------|---------|
+|  breakdown   |  count  |
+|--------------|---------|
 | 0-30         | 48      |
 | 30-60        | 25      |
 | 60-90        | 33      |
