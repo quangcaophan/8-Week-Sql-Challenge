@@ -16,9 +16,14 @@
 
 ## 🛠️ Problem Statement
 
-Danny finds a few smart friends to launch his new startup Foodie-Fi in 2020 and started selling monthly and annual subscriptions, giving their customers unlimited on-demand access to exclusive food videos from around the world!
+> Danny finds a few smart friends to launch his new startup Foodie-Fi in 2020 and started selling monthly and annual subscriptions, giving their customers unlimited on-demand access to exclusive food videos from around the world!
+>
+> Danny created Foodie-Fi with a data driven mindset and wanted to ensure all future investment decisions and new features were decided using data. This case study focuses on using subscription style digital data to answer important business questions.
 
-Danny created Foodie-Fi with a data driven mindset and wanted to ensure all future investment decisions and new features were decided using data. This case study focuses on using subscription style digital data to answer important business questions.
+## Entity Relationship Diagram
+![image](https://8weeksqlchallenge.com/images/case-study-3-erd.png)
+
+---
 
 ## 📂 Dataset
 Danny has shared with you 2 key datasets for this case study:
@@ -91,6 +96,7 @@ In this part, I will display the first 20 rows of this dataset since the origina
 
 </details>
 
+---
 
 ## 🧙‍♂️ Case Study Questions
 
@@ -106,6 +112,7 @@ In this part, I will display the first 20 rows of this dataset since the origina
 10. Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)
 11. How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
 
+---
 
 ## 🚀 Solutions
 
