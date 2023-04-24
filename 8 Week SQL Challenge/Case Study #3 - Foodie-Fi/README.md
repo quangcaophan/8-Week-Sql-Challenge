@@ -126,6 +126,8 @@ FROM foodie_fi.subscriptions;
 
 - Foodie-Fi has 1,000 unique customers.
 
+---
+
 **2. What is the monthly distribution of trial plan start_date values for our dataset - use the start of the month as the group by value**
 
 Question is asking for the monthly numbers of users on trial plan.
@@ -163,8 +165,9 @@ months | trial_subscription
 
 - March has the highest number of trial plans, whereas February has the lowest number of trial plans.
 
-** 3. What plan start_date values occur after the year 2020 for our dataset? Show the breakdown by count of events for each plan_name.**
+---
 
+**3. What plan start_date values occur after the year 2020 for our dataset? Show the breakdown by count of events for each plan_name.**
 Question is asking for the number of plans for start dates occurring on 1 Jan 2021 and after grouped by plan names.
 - Filter plans with start_dates occurring on 2021–01–01 and after.
 - Group and order results by plan.
@@ -201,6 +204,8 @@ plan_id | plan_name   | events_2020|events_2021
 - There were 0 customer on trial plan in 2021. Does it mean that there were no new customers in 2021, or did they jumped on basic monthly plan without going through the 7-week trial?
 - We should also look at the data and look at the customer proportion for 2020 and 2021.
 
+---
+
 **Q4. What is the customer count and percentage of customers who have churned rounded to 1 decimal place?**
 
 I like to write down the steps and breakdown the questions into parts.
@@ -230,6 +235,8 @@ churn_count | churn_percentage
   307 |            30
 
 - There are 307 customers who have churned, which is 30.7% of Foodie-Fi customer base.
+
+---
 
 **Q5. How many customers have churned straight after their initial free trial what percentage is this rounded to the nearest whole number?**
 
@@ -274,6 +281,8 @@ WHERE plan_id = 4 -- Filter to churn plan
 
 - There are 92 customers who churned straight after the initial free trial which is at 9% of entire customer base.
 
+---
+
 **Q6. What is the number and percentage of customer plans after their initial free trial?**
 
 Question is asking for number and percentage of customers who converted to becoming paid customer after the trial. 
@@ -316,6 +325,8 @@ next_plan|conversions|conversion_percentage
 4|	92|	9
 
 - More than 80% of customers are on paid plans with small 3.7% on plan 3 (pro annual $199). Foodie-Fi has to strategize on their customer acquisition who would be willing to spend more.
+
+---
 
 **Q7. What is the customer count and percentage breakdown of all 5 plan_name values at 2020-12-31?**
 
@@ -362,6 +373,8 @@ plan_id|customers|percentage
 3|	195|	19
 4|	235|	23
 
+---
+
 **8. How many customers have upgraded to an annual plan in 2020?**
 
 ````sql
@@ -379,6 +392,8 @@ WHERE plan_id = 3
 
 
 - 195 customers upgraded to an annual plan in 2020.
+
+---
 
 **Q9. How many days on average does it take for a customer to an annual plan from the day they join Foodie-Fi?**
 
@@ -412,6 +427,8 @@ JOIN annual_plan AS ap
 |104 |
 
 - On average, it takes 104 days for a customer to upragde to an annual plan from the day they join Foodie-Fi.
+
+---
 
 **Q10. Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)**
 
@@ -464,6 +481,8 @@ ORDER BY avg_days_to_upgrade;
 | 270-300      | 1       |
 | 300-330      | 1       |
 | 330-360      | 1       |
+
+---
 
 **Q11. How many customers downgraded from a pro monthly to a basic monthly plan in 2020?**
 
