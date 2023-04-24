@@ -4,7 +4,7 @@
 [![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/quangcaophan?tab=repositories)
 [![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/quangcaophan)
 
-# 🍜 Case Study #1 - Danny's Diner
+# 🥑 Case Study #3 - Foodie-Fi
 
 ## 📕 Table Of Contents
 * 🛠️ [Problem Statement](#problem-statement)
@@ -23,7 +23,7 @@ Danny created Foodie-Fi with a data driven mindset and wanted to ensure all futu
 ## 📂 Dataset
 Danny has shared with you 2 key datasets for this case study:
 
-### **```plan```**
+### **```plans```**
 
 <details>
 <summary>
