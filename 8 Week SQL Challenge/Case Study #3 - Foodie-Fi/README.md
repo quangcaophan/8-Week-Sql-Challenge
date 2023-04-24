@@ -163,7 +163,7 @@ months | trial_subscription
 
 - March has the highest number of trial plans, whereas February has the lowest number of trial plans.
 
-** 3. What plan start_date values occur after the year 2020 for our dataset? Show the breakdown by count of events for each plan_name.***
+** 3. What plan start_date values occur after the year 2020 for our dataset? Show the breakdown by count of events for each plan_name.**
 
 Question is asking for the number of plans for start dates occurring on 1 Jan 2021 and after grouped by plan names.
 - Filter plans with start_dates occurring on 2021–01–01 and after.
@@ -225,7 +225,7 @@ WHERE plan_name = 'churn';
 
 **Answer:**
 
-num_churned | percent_churned 
+churn_count | churn_percentage 
 -------------|-----------------
   307 |            30
 
@@ -268,7 +268,7 @@ WHERE plan_id = 4 -- Filter to churn plan
 
 **Answer:**
 
-  direct_churner | percent_churned 
+  churn_count | churn_percentage 
  ----------------|-----------------
  92 |             9
 
@@ -450,7 +450,7 @@ ORDER BY avg_days_to_upgrade;
 
 **Answer:**
 
-|  breakdown   |  count  |
+|  breakdown   |customers|
 |--------------|---------|
 | 0-30         | 48      |
 | 30-60        | 25      |
@@ -487,8 +487,8 @@ WHERE start_date <= '2020-12-31'
 
 **Answer:**
 
-|customers_downgraded|
-|--------------------|
-| 0                  |
+|downgraded|
+|----------|
+| 0        |
 
 - No customer has downgrade from pro monthly to basic monthly in 2020.
