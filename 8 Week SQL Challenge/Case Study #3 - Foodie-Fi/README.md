@@ -118,7 +118,114 @@ In this part, I will display the first 20 rows of this dataset since the origina
 
 <details>
   <summary> 
-    Data Analysis Questions
+    A. Customer Journey 
+  </summary>
+
+Based off the 8 sample customers provided in the sample subscriptions table below, write a brief description about each customer’s onboarding journey.
+
+<img width="261" alt="Screenshot 2021-08-17 at 11 36 10 PM" src="https://user-images.githubusercontent.com/81607668/129756709-75919d79-e1cd-4187-a129-bdf90a65e196.png">
+
+**Answer:**
+
+```sql
+SELECT
+  s.customer_id,f.plan_id, f.plan_name,  s.start_date
+FROM foodie_fi.plans f
+JOIN foodie_fi.subscriptions s
+  ON f.plan_id = s.plan_id
+WHERE s.customer_id IN (1,2,11,13,15,16,18,19)
+```
+
+|customer_id|plan_id|plan_name|start_date|
+|---|---|---|---|
+|1|0|trial|2020-08-01|
+|1|1|basic monthly|2020-08-08|
+|2|0|trial|2020-09-20|
+|2|3|pro annual|2020-09-27|
+|11|0|trial|2020-11-19|
+|11|4|churn|2020-11-26|
+|13|0|trial|2020-12-15|
+|13|1|basic monthly|2020-12-22|
+|13|2|pro monthly|2021-03-29|
+|15|0|trial|2020-03-17|
+|15|2|pro monthly|2020-03-24|
+|15|4|churn|2020-04-29|
+|16|0|trial|2020-05-31|
+|16|1|basic monthly|2020-06-07|
+|16|3|pro annual|2020-10-21|
+|18|0|trial|2020-07-06|
+|18|2|pro monthly|2020-07-13|
+|19|0|trial|2020-06-22|
+|19|2|pro monthly|2020-06-29|
+|19|3|pro annual|2020-08-29|
+
+From the sample results, I will choose 3 customers and write about their onboarding journey.
+  
+```sql
+  SELECT
+  s.customer_id,
+  f.plan_id, 
+  f.plan_name,  
+  s.start_date
+FROM plans f
+JOIN subscriptions s
+  ON f.plan_id = s.plan_id
+WHERE s.customer_id = 1;
+```
+  
+|customer_id|plan_id|plan_name|start_date|
+|---|---|---|---|
+|1|0|trial|2020-08-01|
+|1|1|basic monthly|2020-08-08|
+
+
+Customer 1 started the free trial on 1 Aug 2020 and subsequently subscribed to the basic monthly plan on 8 Aug 2020 after the 7-days trial has ended.
+```sql
+SELECT
+  s.customer_id,
+  f.plan_id, 
+  f.plan_name,  
+  s.start_date
+FROM plans f
+JOIN subscriptions s
+  ON f.plan_id = s.plan_id
+WHERE s.customer_id = 13;
+```
+  
+|customer_id|plan_id|plan_name|start_date|
+|---|---|---|---|
+|13|0|trial|2020-12-15|
+|13|1|basic monthly|2020-12-22|
+|13|2|pro monthly|2021-03-29|
+
+
+Customer 13 started the free trial on 15 Dec 2020, then subscribed to the basic monthly plan on 22 Dec 2020. 3 months later on 29 Mar 2021, customer upgraded to the pro monthly plan.
+
+```sql
+  SELECT
+  s.customer_id,
+  f.plan_id, 
+  f.plan_name,  
+  s.start_date
+FROM plans f
+JOIN subscriptions s
+  ON f.plan_id = s.plan_id
+WHERE s.customer_id = 15;
+```
+  
+|customer_id|plan_id|plan_name|start_date|
+|---|---|---|---|
+|15|0|trial|2020-03-17|
+|15|2|pro monthly|2020-03-24|
+|15|4|churn|2020-04-29|
+  
+Customer 15 commenced free trial on 17 Mar 2020, then upgraded to pro monthly plan on 24 Mar 2020 after the trial ended. In the following month on 29 Apr 2020, the customer terminated subscription and churned until the paid subscription ended on 24/25 May 2020.
+
+</details>
+
+<details>
+  <summary> 
+    B. Data Analysis Questions
   </summary>
 
 **1. How many customers has Foodie-Fi ever had?**
@@ -524,3 +631,6 @@ WHERE start_date <= '2020-12-31'
 | 0        |
 
 - No customer has downgrade from pro monthly to basic monthly in 2020.
+
+                    
+                      
